@@ -3,7 +3,7 @@ ENV MYSQL_ROOT_PASSWORD=12345
 ENV MYSQL_PASSWORD=12345
 ENV MYSQL_DATABASE=rest_api_crud_db
 	  
-FROM maven:latest as biuld 
+FROM maven:latest as build 
 COPY src /emo/src
 COPY pom.xml /emo/
 RUN mvn -f /emo/pom.xml clean package
